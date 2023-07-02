@@ -1,0 +1,211 @@
+/* Reset */
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #F8F8F8;
+}
+*{
+    font-family: 'Cairo', sans-serif;
+    box-sizing: border-box;
+}
+/* Variables */
+:root{
+    --main-color :#669640;
+    --bs-gutter-x: 1.5rem;
+}
+/* Start FrameWork */
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/* End FrameWork */
+
+/* Start Container */
+.container{
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-right: auto;
+    margin-left: auto;
+}
+@media (min-width: 1400px){
+    .container {
+        max-width: 1320px;
+    }
+}
+@media (min-width: 1200px) and (max-width:1399px){
+    .container {
+        max-width: 1140px;
+    }
+}
+@media (min-width: 992px) and (max-width:1199px){
+    .container {
+        max-width: 1080px
+    }
+}
+@media (min-width: 768px) and (max-width:991px){
+    .container {
+        max-width: 720px;
+    }
+}
+@media (min-width: 576px) and (max-width:767px){
+    .container {
+        max-width: 540px;
+    }
+}
+@media screen and (max-width:575px){
+    .container {
+        max-width: 450px;
+    }
+}
+/* End Container */
+.profile-data{
+    padding: 0 10px;
+    min-width: 400px;
+    width: 35%;
+}
+.profile-data h1{
+    color: #0B0B0B;
+    font-weight: 900;
+    margin: 10px 0;
+    text-align: center;
+}
+.profile-data .uploda-image{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+.profile-data .uploda-image .upload{
+    position: absolute;
+    right: 40%;
+    top: 50%;
+}
+.profile-data  form{
+    padding: 0 20px;
+}
+.profile-data  form div{
+    display: flex;
+    flex-direction: column;
+}
+.profile-data form div .choose{
+    flex-direction: row;
+    gap: 10px;
+}
+.profile-data form div input {
+    margin: 15px 0;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    padding: 14px 16px 14px 16px;
+    box-shadow: 5px 5px 10px #9E9E9E;
+}
+.profile-data form div .choose div{
+    width: 50%;
+    position: relative;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    padding: 5px;
+    background-color: #fff;
+    margin: 10px 0;
+    box-shadow: 5px 5px 10px #9E9E9E;
+}
+.profile-data form div .choose div p{
+    color: #828282;
+    margin-left: 5px;
+}
+.profile-data form div .choose div ul{
+    position: absolute;
+    text-align: center;
+    background-color: #ddd;
+    width: 100%;
+    left: 0;
+    top: 70%;
+    padding: 0;
+    display: none;
+}
+.profile-data form div .choose div .show-country, .profile-data form div .choose div .show-city{
+    display: flex;
+    flex-direction: column;
+}
+.profile-data form div .choose div ul li{
+    cursor: pointer;
+    margin: 10px 0;
+}
+.profile-data form div .choose div svg{
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    top: 34%;
+}
+.profile-data form div fieldset{
+    border: none;
+    margin: 15px 0;
+    padding: 0;
+}
+.profile-data form div fieldset input{
+    box-shadow: none;
+}
+.profile-data form div fieldset label{
+    margin-right: 50px;
+    margin-left: 10px;
+}
+.profile-data form button{
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    padding: 14px 16px 14px 16px;
+    width: 100%;
+    background-color: var(--main-color);
+    margin: 25px 0;
+    color: #fff;
+    font-weight: 900;
+    cursor: pointer;
+    transition: 0.5s;
+    box-shadow: 10px 10px 10px #9E9E9E;
+}
+.profile-data form button:hover{
+    transform: translateY(5px);
+    background-color: #fff;
+    color: var(--main-color);
+}
+.profile-data form .phone{
+    position: relative;
+}
+.profile-data form .phone .phone-choose{
+    position: absolute;
+    background-color: #EDEDED;
+    margin-left: 10px;
+    width: 75px;
+    top: 44%;
+    gap: 5px;
+    align-items: center;
+    flex-direction: row;
+    height: 30px;
+    border-radius: 8px;
+}
+.profile-data form .phone .phone-choose p{
+    margin: 0;
+}
+.profile-data form .phone .phone-choose svg:first-of-type{
+    margin-left: 5px;
+}
+@media screen and (max-width:575px) {
+    .profile-data{
+        min-width: 100%;
+    }
+    .profile-data form div .choose{
+        flex-direction: column;
+    }
+    .profile-data form div .choose div{
+        width: 100%;
+    }
+}

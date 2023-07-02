@@ -1,0 +1,201 @@
+/* Reset */
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #F8F8F8;
+}
+*{
+    font-family: 'Cairo', sans-serif;
+    box-sizing: border-box;
+}
+/* Variables */
+:root{
+    --main-color :#669640;
+    --bs-gutter-x: 1.5rem;
+}
+/* Start FrameWork */
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/* End FrameWork */
+
+/* Start Container */
+.container{
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-right: auto;
+    margin-left: auto;
+}
+@media (min-width: 1400px){
+    .container {
+        max-width: 1320px;
+    }
+}
+@media (min-width: 1200px) and (max-width:1399px){
+    .container {
+        max-width: 1140px;
+    }
+}
+@media (min-width: 992px) and (max-width:1199px){
+    .container {
+        max-width: 1080px
+    }
+}
+@media (min-width: 768px) and (max-width:991px){
+    .container {
+        max-width: 720px;
+    }
+}
+@media (min-width: 576px) and (max-width:767px){
+    .container {
+        max-width: 540px;
+    }
+}
+@media screen and (max-width:575px){
+    .container {
+        max-width: 450px;
+    }
+}
+/* End Container */
+.register{
+    padding: 0 10px;
+    min-width: 400px;
+    width: 35%;
+}
+.register .register-brand{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 25px 0;
+}
+.register .register-brand h1{
+    color: #0B0B0B;
+    font-weight: 900;
+    margin: 10px 0;
+}
+.register .register-brand p{
+    text-align: center;
+    color: #76777A;
+}
+.register form{
+    padding: 0 20px;
+}
+.register form div{
+    display: flex;
+    flex-direction: column;
+}
+.register form div input{
+    margin: 15px 0;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    padding: 14px 16px 14px 16px;
+    box-shadow: 5px 5px 10px #9E9E9E;
+}
+.register form .password-input{
+    position: relative;
+}
+.register form .password-input svg{
+    display: none;
+}
+.register form .password-input .open{
+    display: inline;
+    position: absolute;
+    right: 10px;
+    top: 42%;
+    cursor: pointer;
+}
+.register form .password-input .text{
+    top: 46%;
+}
+.register form p:last-of-type{
+    font-size: 12px;
+    text-align: center;
+}
+.register form p:last-of-type span{
+    font-weight: 900;
+    text-decoration: underline;
+}
+.register form .checkbox{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.register form input[type=checkbox]{
+    width: 20px;
+    height: 20px;
+}
+.register form input[type=checkbox]:checked{
+    background-color: #0062A0;
+}
+.register form input[type=submit]{
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    padding: 14px 16px 14px 16px;
+    width: 100%;
+    background-color: var(--main-color);
+    margin-top: 25px;
+    margin-bottom: 5px;
+    color: #fff;
+    font-weight: 900;
+    cursor: pointer;
+    transition: 0.5s;
+    box-shadow: 10px 10px 10px #9E9E9E;
+}
+.register form input[type=submit]:hover{
+    transform: translateY(5px);
+    background-color: #fff;
+    color: var(--main-color);
+}
+.register .substitute p{
+    text-align: center;
+    margin: 20px 0;
+}
+.register .substitute .social{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+.register .substitute .social svg{
+    cursor: pointer;
+    box-shadow: 5px 5px 2px #ddd;
+    border-radius: 50%;
+}
+.register .create-account{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    align-items: center;
+}
+.register .create-account a{
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #EFF4EB;
+    color: var(--main-color);
+    cursor: pointer;
+    transition: 0.5s;
+}
+.register .create-account a:hover{
+    color: #fff;
+    background-color: var(--main-color);
+    padding: 10px 20px;
+}
+@media screen and (max-width:575px) {
+    .register{
+        min-width: 250px;
+        width: 100%;
+    }
+}

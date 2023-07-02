@@ -1,0 +1,18 @@
+/* Reset */
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+*{
+    font-family: 'Cairo', sans-serif;
+    box-sizing: border-box;
+}
+:root{
+    --main-color : #669640;
+}
