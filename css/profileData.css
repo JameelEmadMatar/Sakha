@@ -83,10 +83,25 @@ a{
     justify-content: center;
     margin: 30px 0;
 }
-.profile-data .uploda-image .upload{
+.profile-data .uploda-image .round{
     position: absolute;
-    right: 40%;
-    top: 50%;
+    bottom: 0;
+    left: 53%;
+    width: 32px;
+    height: 32px;
+    line-height: 33px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.profile-data .uploda-image .round input[type='file']{
+    position: absolute;
+    opacity: 0;
+}
+.profile-data .uploda-image .file-name{
+    position: absolute;
+    top: 80%;
+    width: 100%;
+    text-align: center;
 }
 .profile-data  form{
     padding: 0 20px;
@@ -158,21 +173,27 @@ a{
     margin-right: 50px;
     margin-left: 10px;
 }
-.profile-data form button{
+.profile-data form .submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile-data form .submit a{
     border: none;
     outline: none;
     border-radius: 8px;
     padding: 14px 16px 14px 16px;
-    width: 100%;
     background-color: var(--main-color);
     margin: 25px 0;
+    width: 80%;
     color: #fff;
     font-weight: 900;
     cursor: pointer;
     transition: 0.5s;
     box-shadow: 10px 10px 10px #9E9E9E;
+    text-align: center;
 }
-.profile-data form button:hover{
+.profile-data form .submit a:hover{
     transform: translateY(5px);
     background-color: #fff;
     color: var(--main-color);
